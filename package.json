@@ -1,0 +1,7 @@
+{
+  "name": "classroom-key-drill", "version": "1.0.0", "private": true,
+  "type": "module", "engines": {"node": ">=22.18"},
+  "scripts": {"start": "node src/drill_service.ts", "test": "node --test src/drill.test.ts", "typecheck": "tsc --noEmit"},
+  "dependencies": {"zod": "^3.24.0"},
+  "devDependencies": {"typescript": "^5.8.0", "@types/node": "^22.0.0"}
+}

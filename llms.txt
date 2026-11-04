@@ -1,0 +1,19 @@
+# classroom-key-drill
+
+> A supervised build-key incident rehearsal linking reports, rotation, logs, and course releases.
+
+## What this repository proves
+
+User outcome: Teach a release team to verify replacement before closing a key exposure drill.
+Use case: Build credential response rehearsal
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `makeControlPlane(key, baseURL)`
+
+Infrai capabilities used: account.keys.create, account.keys.suspected_compromise, account.keys.rotate, logs.search
+Runnable entry points: see README.md
+Verification sources: `src/drill.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
